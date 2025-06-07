@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money-Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-bg">
+      <h1 class="logo">Money Converter</h1>
+      <div class="container">
+        <form action="submit" class="form">
+          <label for="real">Valor da Moeda</label>
+          <input type="number" step="any" name="real" id="real" placeholder="0" required />
+          <label for="coin" class="coin">Moeda</label>
+          <select name="coin" id="coin" required>
+            <option value="usd">Dolár Americano</option>
+            <option value="eur">Euro</option>
+            <option value="btc">Bitcoin</option>
+            <option value="ars">Peso Argentino</option>
+          </select>
+          <button type="submit" class="btn">Converter</button>
+        </form>
+        <div class="result">
+          <span class="conversion"></span>
+          <h1 id="converted"></h1>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
